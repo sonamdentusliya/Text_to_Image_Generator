@@ -18,7 +18,7 @@ function searchImage() {
 
     fetch(url, {
         headers: {
-            'Authorization': 'Client-ID M7OGjjDYc_CQ68Tor4V2P_Xpk1YJ9VcyWtMvlYgb59U',
+            'Authorization': 'Client-ID M7OGjjDYc_CQ68Tor4V2P_Xpk1YJ9VcyWtMvlYgb5U',
             'Accept-Version': 'v1'
         }
     })
@@ -41,4 +41,5 @@ function searchImage() {
         buttonText.style.visibility = 'visible';
     });
 }
+
 
