@@ -7,7 +7,7 @@
 
 
 body {
-    background: #000;
+    background: #e8acc0;
     color: #bfbfbf;
     font-family: 'Poppins', Arial, sans-serif;
     min-height: 100vh;
@@ -25,11 +25,11 @@ body {
 
 
 h1 {
-    color: #00ffff;
+    color: #f6078e;
     font-size: 2.4rem;
     font-family: monospace;
     margin-bottom: 20px;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    text-shadow: 0 0 10px rgba(234, 123, 181, 0.6);
 }
 
 
@@ -38,7 +38,7 @@ label,
     display: block;
     font-size: 1rem;
     margin-bottom: 12px;
-    color: #cfcfcf;
+    color: #1b1a1a;
 }
 
 
@@ -49,7 +49,7 @@ input {
     border-radius: 25px;
     border: none;
     outline: none;
-    background: #2b2b2b;
+    background: #f16591;
     color: #fff;
     text-align: center;
     font-size: 1rem;
@@ -129,3 +129,4 @@ button:hover {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+
