@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: #000;
+    color: #bfbfbf;
+    font-family: 'Poppins', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 420px;
+}
+
+
+h1 {
+    color: #00ffff;
+    font-size: 2.4rem;
+    font-family: monospace;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+
+label,
+.container p {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 12px;
+    color: #cfcfcf;
+}
+
+
+input {
+    width: 100%;
+    max-width: 320px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: #2b2b2b;
+    color: #fff;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+
+button {
+    position: relative;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #111;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+
+button::before {
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(90deg, #0066ff, #cc00ff);
+    border-radius: 12px;
+    z-index: -1;
+}
+
+
+button::after {
+    content: "";
+    position: absolute;
+    inset: 2px;
+    background: #111;
+    border-radius: 8px;
+    z-index: -1;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+#imageContainer img {
+    width: 260px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+
+.loader {
+    display: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    border-top: 3px solid #00ffff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: auto;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
